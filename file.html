@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>cittibabu manage System</title>
+    <style>
+        body {
+            font-family: Arial;
+            background: linear-gradient(to right, #5a78927a, #52af3b);
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 80%;
+            margin: 30px auto;
+            background: rgba(255, 255, 255, 0.712);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px gray;
+        }
+
+        h2 {
+            text-align: center;
+            color: #333333;
+        }
+
+        fieldset {
+            border: 2px solid #63fe4f;
+            margin-bottom: 20px;
+            padding: 15px;
+            border-radius: 8px;
+        }
+
+        legend {
+            font-weight: bold;
+            color: #63fe4f;
+        }
+
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+
+        input, select, textarea {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            border-radius: 5px;
+            border: 1px solid #cccccc;
+        }
+
+        .row {
+            display: flex;
+            gap: 15px;
+        }
+
+        .row div {
+            flex: 1;
+        }
+
+        .btn {
+            text-align: center;
+        }
+
+        button {
+            padding: 10px 20px;
+            border: none;
+            background: #3cac26;
+            color: rgba(255, 255, 255, 0.829);
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #15ff00;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>CITTIBABU DETAILS FORM</h1>
+
+    <form>
+
+        <!-- Personal Details -->
+        <fieldset>
+            <legend>Personal Details</legend>
+
+            <div class="row">
+                <div>
+                    <label>First Name</label>
+                    <input type="text" required>
+                </div>
+
+                <div>
+                    <label>Last Name</label>
+                    <input type="text" required>
+                </div>
+            </div>
+
+            <label>Date of Birth</label>
+            <input type="date">
+            
+            <div>
+            <label>sports</label>
+            <input type="text" required>
+            </div>
+
+            <label>Gender</label>
+            <select>
+                <option>Male</option>
+                <option>Female</option>
+                <option>Other</option>
+            </select>
+
+            <label>Phone Number</label>
+            <input type="tel">
+
+            <label>Email</label>
+            <input type="email">
+
+        </fieldset>
+
+        <!-- Address -->
+        <fieldset>
+            <legend>Address Details</legend>
+
+            <label>Street Address</label>
+            <textarea></textarea>
+
+            <div class="row">
+                <div>
+                    <label>City</label>
+                    <input type="text">
+                </div>
+
+                <div>
+                    <label>State</label>
+                    <input type="text">
+                </div>
+
+                <div>
+                    <label>Pincode</label>
+                    <input type="number">
+                </div>
+            </div>
+        </fieldset>
+
+        <!-- Education -->
+        <fieldset>
+            <legend>Education Details</legend>
+
+            <label>Highest Qualification</label>
+            <select>
+                <option>Diploma</option>
+                <option>UG</option>
+                <option>PG</option>
+            </select>
+
+            <label>College Name</label>
+            <input type="text">
+
+            <label>Percentage / CGPA</label>
+            <input type="text">
+        </fieldset>
+
+        <!-- Skills -->
+        <fieldset>
+            <legend>Skills</legend>
+
+            <label>
+                <input type="checkbox"> HTML
+            </label>
+
+            <label>
+                <input type="checkbox"> CSS
+            </label>
+
+            <label>
+                <input type="checkbox"> JavaScript
+            </label>
+
+            <label>
+                <input type="checkbox"> Python
+            </label>
+        </fieldset>
+
+        <!-- Login Info -->
+        <fieldset>
+            <legend>Account Details</legend>
+
+            <label>Username</label>
+            <input type="text">
+
+            <label>Password</label>
+            <input type="password">
+        </fieldset>
+
+        <!-- Submit -->
+        <div class="btn">
+            <button type="submit">Submit</button>
+        </div>
+
+    </form>
+</div>
+
+</body>
+</html>
